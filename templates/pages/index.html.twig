@@ -7,8 +7,11 @@
 {% endblock %}
 
 {% block body %}
+<div id="root"></div>
+
 
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
+    {{ encore_entry_script_tags('components') }}
 {% endblock %}
